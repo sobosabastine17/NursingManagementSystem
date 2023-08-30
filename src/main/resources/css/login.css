@@ -1,0 +1,9 @@
+
+#loginPane1{
+-fx-background-color:#020873;
+}
+#btnLogin{
+ -fx-background-color:#fba337;
+ -fx-border-color::#fba337;
+ -fx-border-style: segements(10,15,15,15) line-cap round;
+}

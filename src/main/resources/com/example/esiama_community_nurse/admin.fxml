@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esiama_community_nurse.controller">
+    <children>
+        <Pane id="sideBar" prefHeight="700.0" prefWidth="200.0" stylesheets="@../../../css/myStyle.css">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="616.0" prefWidth="200.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="83.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../images/logo.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Label prefHeight="20.0" prefWidth="86.0" text="Techline Systems" textFill="#0d0303">
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                            <font>
+                                                <Font size="11.0" />
+                                            </font>
+                                        </Label>
+                                        <Label text="ADMIN" textFill="#170707">
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                            <font>
+                                                <Font name="System Bold" size="10.0" />
+                                            </font>
+                                            <graphic>
+                                                <FontAwesomeIcon fill="#1c086b" iconName="SHIELD" selectionFill="#1e0b68" />
+                                            </graphic>
+                                        </Label>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <Line endX="100.0" startX="-100.0" stroke="#fcf7f7">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </Line>
+                  <Pane id="btnColor" onMousePressed="#goBack" prefHeight="39.0" prefWidth="201.0" stylesheets="@../../../css/myStyle.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="108.0">
+                           <children>
+                              <FontAwesomeIcon fill="#cedaf2" iconName="BOOK" size="2em">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </FontAwesomeIcon>
+                              <Text fill="#fcf3f3" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD STAFF">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane id="btnColor" onMousePressed="#goBack" prefHeight="40.0" prefWidth="201.0" stylesheets="@../../../css/myStyle.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="108.0">
+                           <children>
+                              <FontAwesomeIcon fill="#f8f1f1" iconName="PLUS" size="2em" />
+                              <Text fill="#fcf3f3" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD STUDENT">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane id="btnColor" onMousePressed="#goBack" prefHeight="38.0" prefWidth="201.0" stylesheets="@../../../css/myStyle.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="108.0">
+                           <children>
+                              <FontAwesomeIcon fill="#fffafa" iconName="USER" size="2em" />
+                              <Text fill="#fcf3f3" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" />
+                     </VBox.margin>
+                  </Pane>
+                        <Label text="Log out" textAlignment="JUSTIFY" textFill="#290a72" underline="true">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="300.0" />
+                            </VBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+        <Pane id="boardPane" layoutX="200.0" layoutY="-2.0" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../../../css/myStyle.css">
+            <children>
+                <AnchorPane prefHeight="700.0" prefWidth="1200.0">
+                    <children>
+                        <VBox prefHeight="100.0" prefWidth="1200.0">
+                            <children>
+                                <HBox id="sideBar" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="1200.0" stylesheets="@../../../css/myStyle.css">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" ESIAMA COMMUNITY NURSING STUDENT MANAGEMENT SYSTEM ">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Button id="btnColor" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" text="0" textFill="#fcf9f9">
+                                            <graphic>
+                                                <FontAwesomeIcon fill="#fcf8f7" iconName="INBOX" selectionFill="#f27406" />
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="400.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                        <Button id="btnClose" fx:id="btnLogout" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" text="EXIT" textFill="#fcf1f1">
+                                            <graphic>
+                                                <FontAwesomeIcon fill="#fcfbfa" iconName="POWER_OFF" selectionFill="#f27406" />
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                        <HBox prefHeight="60.0" prefWidth="200.0">
+                           <children>
+                              <Button id="btnColor" mnemonicParsing="false" prefHeight="37.0" prefWidth="71.0" stylesheets="@../../../css/myStyle.css" text="Staff" textFill="#f5f0f0">
+                                 <HBox.margin>
+                                    <Insets left="16.0" top="8.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="71.0" text="Student" textFill="#5e4b4b">
+                                 <HBox.margin>
+                                    <Insets left="16.0" top="8.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <FontAwesomeIcon iconName="SEARCH" size="2em">
+                                 <HBox.margin>
+                                    <Insets left="800.0" top="8.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIcon>
+                           </children>
+                        </HBox>
+                            </children>
+                        </VBox>
+                        <VBox fx:id="vBoxUploadRecord" alignment="CENTER" prefHeight="700.0" prefWidth="1200.0" visible="false">
+                            <children>
+                                <AnchorPane id="subArchorPane" prefHeight="600.0" prefWidth="600.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                    <children>
+                                        <Pane id="customerPane" fx:id="hbCenterPaneManageCustomer" layoutX="30.0" layoutY="41.0" prefHeight="547.0" prefWidth="999.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                            <children>
+                                                <VBox fx:id="customerManagerVBox" prefHeight="550.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                            <children>
+                                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE STAFF" textAlignment="CENTER">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="32.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets />
+                                                                    </HBox.margin>
+                                                                </Text>
+                                                            </children>
+                                                        </HBox>
+                                                        <VBox prefHeight="550.0" prefWidth="1000.0">
+                                                            <children>
+                                                                <HBox prefHeight="60.0" prefWidth="1000.0">
+                                                                    <children>
+                                                                        <Button id="btnNavIcons" fx:id="btnPrintCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#5f0cb9" iconName="PRINT" selectionFill="#281212" size="2.5em" />
+                                                                            </graphic>
+                                                                            <tooltip>
+                                                                                <Tooltip text="PRINT DATA" />
+                                                                            </tooltip>
+                                                                        </Button>
+                                                                        <Button id="btnNavIcons" fx:id="btnUpdateCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#97cedb" iconName="EDIT" selectionFill="#281212" size="2.5em" />
+                                                                            </graphic>
+                                                                            <tooltip>
+                                                                                <Tooltip text="EDIT DATA" />
+                                                                            </tooltip>
+                                                                        </Button>
+                                                                        <Button id="btnNavIcons" fx:id="btnExpotCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#127946" iconName="FILE" selectionFill="#281212" size="2.5em" />
+                                                                            </graphic>
+                                                                            <tooltip>
+                                                                                <Tooltip text="EXPORT TO EXCEL" />
+                                                                            </tooltip>
+                                                                        </Button>
+                                                                        <Button id="btnNavIcons" fx:id="btnRefreshCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#f59003" iconName="REFRESH" size="2.5em" />
+                                                                            </graphic>
+                                                                            <tooltip>
+                                                                                <Tooltip text="REFRESH" />
+                                                                            </tooltip>
+                                                                        </Button>
+                                                                        <Button id="btnNavIcons" fx:id="btnDeleteCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#e81313" iconName="CLOSE" selectionFill="#281212" size="2.5em" />
+                                                                            </graphic>
+                                                                            <tooltip>
+                                                                                <Tooltip text="DELETE DATA" />
+                                                                            </tooltip>
+                                                                        </Button>
+                                                                        <Button id="btnNavIcons" mnemonicParsing="false" prefHeight="36.0" prefWidth="76.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <graphic>
+                                                                                <FontAwesomeIcon fill="#0e07eb" iconName="SEARCH" />
+                                                                            </graphic>
+                                                                            <HBox.margin>
+                                                                                <Insets left="50.0" />
+                                                                            </HBox.margin>
+                                                                        </Button>
+                                                                        <TextField fx:id="txtSearch" prefHeight="38.0" prefWidth="234.0" promptText="STAFF ID/NAME">
+                                                                            <HBox.margin>
+                                                                                <Insets right="10.0" />
+                                                                            </HBox.margin>
+                                                                        </TextField>
+                                                                        <VBox id="customerCountVB" prefHeight="38.0" prefWidth="211.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <children>
+                                                                                <HBox prefHeight="38.0" prefWidth="143.0">
+                                                                                    <children>
+                                                                                        <Label prefHeight="19.0" prefWidth="165.0" text="NUMBER OF STAFF : ">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="13.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                        <Label prefHeight="16.0" prefWidth="109.0" text="0">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="14.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                    </children>
+                                                                                </HBox>
+                                                                                <HBox prefHeight="38.0" prefWidth="143.0">
+                                                                                    <children>
+                                                                                        <Label prefHeight="16.0" prefWidth="142.0" text="TEACHING STAFF : " textFill="#2ada42">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="11.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                        <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="14.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                    </children>
+                                                                                </HBox>
+                                                                            </children>
+                                                                        </VBox>
+                                                                        <VBox id="customerCountVB" prefHeight="38.0" prefWidth="211.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                                            <children>
+                                                                                <HBox prefHeight="38.0" prefWidth="143.0">
+                                                                                    <children>
+                                                                                        <Label prefHeight="16.0" prefWidth="182.0" text="NONE TEACHING STAFF :" textFill="#fcea24">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="11.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                        <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="14.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                    </children>
+                                                                                </HBox>
+                                                                                <HBox prefHeight="38.0" prefWidth="143.0">
+                                                                                    <children>
+                                                                                        <Label prefHeight="16.0" prefWidth="168.0" text="CASUAL WORKERS :" textFill="#e42626">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="11.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                        <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                                            <font>
+                                                                                                <Font name="System Bold" size="14.0" />
+                                                                                            </font>
+                                                                                        </Label>
+                                                                                    </children>
+                                                                                </HBox>
+                                                                            </children>
+                                                                        </VBox>
+                                                                    </children>
+                                                                </HBox>
+                                                                <VBox prefHeight="550.0" prefWidth="2000.0">
+                                                                    <children>
+                                                                        <ScrollPane prefHeight="550.0">
+                                                                            <content>
+                                                                                <TableView fx:id="customerTable" prefHeight="5000.0">
+                                                                                    <columns>
+                                                                                        <TableColumn id="tblColumns" fx:id="tblID" prefWidth="129.0" text="STAFF ID" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblFirstName" prefWidth="158.0" text="FIRST NAME" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblLastName" prefWidth="158.0" text="SECOND NAME" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblLastName1" prefWidth="158.0" text="OTHER NAME" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblNationality" prefWidth="158.0" text="PHONE NUMBER" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblStatus" prefWidth="158.0" text="EMAIL" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblProfile" prefWidth="158.0" text="ADDRESS" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblProfile1" prefWidth="158.0" text="PASSWORD" />
+                                                                                        <TableColumn id="tblColumns" fx:id="tblProfile2" prefWidth="158.0" text="STATUS" />
+                                                                                    </columns>
+                                                                                </TableView>
+                                                                            </content>
+                                                                        </ScrollPane>
+                                                                    </children>
+                                                                </VBox>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="100.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+                            </children>
+                        </VBox>
+                        <VBox fx:id="vBoxUploadResult" alignment="CENTER" prefHeight="650.0" prefWidth="1000.0" visible="false">
+                            <children>
+                                <Text fill="#421b79" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER STAFF">
+                                    <font>
+                                        <Font name="System Bold" size="26.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="40.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <Pane id="editCustomerPane" prefHeight="454.0" prefWidth="900.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                    <children>
+                                        <VBox alignment="CENTER" prefHeight="440.0" prefWidth="700.0">
+                                            <children>
+                                                <Pane prefHeight="432.0" prefWidth="900.0">
+                                                    <children>
+                                                        <VBox alignment="CENTER" layoutX="7.0" prefHeight="405.0" prefWidth="900.0">
+                                                            <children>
+                                                                <ScrollPane prefHeight="389.0" prefWidth="900.0">
+                                                                    <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+                                                                            <children>
+                                                                                <HBox prefHeight="400.0" prefWidth="900.0">
+                                                                                    <children>
+                                                                                        <VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="600.0">
+                                                                                            <children>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STAFF PIN" wrappingWidth="116.9609375">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField fx:id="txtEditAccNo" disable="true" prefHeight="25.0" prefWidth="228.0" />
+                                                                                                        <Button id="btnColor" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" stylesheets="@../../../css/myStyle.css" text="GENERATE" textFill="#f2f2f2" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                    <VBox.margin>
+                                                                                                        <Insets bottom="20.0" />
+                                                                                                    </VBox.margin>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TITLE" wrappingWidth="195.517578125">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <ComboBox prefHeight="25.0" prefWidth="227.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME" wrappingWidth="193.796875">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME" wrappingWidth="190.734375">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OTHER NAME" wrappingWidth="190.4296875">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NO" wrappingWidth="192.421875">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL" wrappingWidth="193.24609375">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ROLE" wrappingWidth="192.033203125">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <ComboBox prefHeight="25.0" prefWidth="226.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD" wrappingWidth="126.783203125">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="222.0" />
+                                                                                                        <Button id="btnColor" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" stylesheets="@../../../css/myStyle.css" text="GENERATE" textFill="#f2f2f2" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <children>
+                                                                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM PASSWORD" wrappingWidth="189.974609375">
+                                                                                                            <font>
+                                                                                                                <Font name="System Bold" size="18.0" />
+                                                                                                            </font>
+                                                                                                        </Text>
+                                                                                                        <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                                                    </children>
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                </HBox>
+                                                                                                <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                                                    <opaqueInsets>
+                                                                                                        <Insets />
+                                                                                                    </opaqueInsets>
+                                                                                                    <padding>
+                                                                                                        <Insets top="5.0" />
+                                                                                                    </padding>
+                                                                                                    <children>
+                                                                                                        <Button id="btnUpdate" mnemonicParsing="false" prefHeight="44.0" prefWidth="89.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css" textFill="#1dee2e">
+                                                                                                            <graphic>
+                                                                                                                <FontAwesomeIcon fill="#0d0000" iconName="SAVE" />
+                                                                                                            </graphic>
+                                                                                                            <font>
+                                                                                                                <Font size="22.0" />
+                                                                                                            </font>
+                                                                                                            <tooltip>
+                                                                                                                <Tooltip text="UPDATE" />
+                                                                                                            </tooltip>
+                                                                                                        </Button>
+                                                                                                        <Button id="btnDeleteCustomer" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css" textFill="#1dee2e">
+                                                                                                            <graphic>
+                                                                                                                <FontAwesomeIcon iconName="REFRESH" />
+                                                                                                            </graphic>
+                                                                                                            <font>
+                                                                                                                <Font size="22.0" />
+                                                                                                            </font>
+                                                                                                            <tooltip>
+                                                                                                                <Tooltip text="DELETE" />
+                                                                                                            </tooltip>
+                                                                                                            <HBox.margin>
+                                                                                                                <Insets left="20.0" />
+                                                                                                            </HBox.margin>
+                                                                                                        </Button>
+                                                                                                    </children>
+                                                                                                </HBox>
+                                                                                            </children>
+                                                                                        </VBox>
+                                                                                        <VBox prefHeight="200.0" prefWidth="100.0">
+                                                                                            <children>
+                                                                                                <ImageView fitHeight="197.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true">
+                                                                                                    <image>
+                                                                                                        <Image url="@../../../images/profile.png" />
+                                                                                                    </image>
+                                                                                                </ImageView>
+                                                                                                <Button id="btnColor" mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" stylesheets="@../../../css/myStyle.css">
+                                                                                                    <graphic>
+                                                                                                        <FontAwesomeIcon fill="#fffcf9" iconName="UPLOAD" size="2em" />
+                                                                                                    </graphic>
+                                                                                                </Button>
+                                                                                            </children>
+                                                                                        </VBox>
+                                                                                    </children>
+                                                                                </HBox>
+                                                                            </children>
+                                                                        </AnchorPane>
+                                                                    </content>
+                                                                    <VBox.margin>
+                                                                        <Insets left="70.0" />
+                                                                    </VBox.margin>
+                                                                </ScrollPane>
+                                                            </children>
+                                                        </VBox>
+                                                    </children>
+                                                </Pane>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="20.0" />
+                                    </VBox.margin>
+                                </Pane>
+                            </children>
+                        </VBox>
+                  <VBox fx:id="vBoxUploadResult1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="1000.0" visible="false">
+                     <children>
+                        <Text fill="#421b79" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT REGISTRATION">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Pane id="editCustomerPane" prefHeight="454.0" prefWidth="900.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="440.0" prefWidth="700.0">
+                                 <children>
+                                    <Pane prefHeight="432.0" prefWidth="900.0">
+                                       <children>
+                                          <VBox alignment="CENTER" layoutX="7.0" prefHeight="405.0" prefWidth="900.0">
+                                             <children>
+                                                <ScrollPane prefHeight="389.0" prefWidth="900.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="800.0">
+                                                         <children>
+                                                            <HBox prefHeight="400.0" prefWidth="900.0">
+                                                               <children>
+                                                                  <VBox alignment="TOP_CENTER" prefHeight="384.0" prefWidth="600.0">
+                                                                     <children>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT PIN" wrappingWidth="122.9609375">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField fx:id="txtEditAccNo1" prefHeight="25.0" prefWidth="228.0" />
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VERIFY PIN" wrappingWidth="105.9609375">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField fx:id="txtEditAccNo11" prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                           <VBox.margin>
+                                                                              <Insets bottom="20.0" />
+                                                                           </VBox.margin>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TITLE" wrappingWidth="195.517578125">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <ComboBox prefHeight="25.0" prefWidth="227.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME" wrappingWidth="193.796875">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME" wrappingWidth="190.734375">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OTHER NAME" wrappingWidth="190.4296875">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NO" wrappingWidth="192.421875">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL" wrappingWidth="193.24609375">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ROLE" wrappingWidth="192.033203125">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <ComboBox prefHeight="25.0" prefWidth="226.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD" wrappingWidth="126.783203125">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="222.0" />
+                                                                              <Button id="btnColor" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" stylesheets="@../../../css/myStyle.css" text="GENERATE" textFill="#f2f2f2" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <children>
+                                                                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM PASSWORD" wrappingWidth="189.974609375">
+                                                                                 <font>
+                                                                                    <Font name="System Bold" size="18.0" />
+                                                                                 </font>
+                                                                              </Text>
+                                                                              <TextField prefHeight="25.0" prefWidth="228.0" />
+                                                                           </children>
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="365.0">
+                                                                           <opaqueInsets>
+                                                                              <Insets />
+                                                                           </opaqueInsets>
+                                                                           <padding>
+                                                                              <Insets top="5.0" />
+                                                                           </padding>
+                                                                           <children>
+                                                                              <Button id="btnUpdate" mnemonicParsing="false" prefHeight="44.0" prefWidth="89.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css" textFill="#1dee2e">
+                                                                                 <graphic>
+                                                                                    <FontAwesomeIcon fill="#0d0000" iconName="SAVE" />
+                                                                                 </graphic>
+                                                                                 <font>
+                                                                                    <Font size="22.0" />
+                                                                                 </font>
+                                                                                 <tooltip>
+                                                                                    <Tooltip text="UPDATE" />
+                                                                                 </tooltip>
+                                                                              </Button>
+                                                                              <Button id="btnDeleteCustomer" mnemonicParsing="false" prefHeight="44.0" prefWidth="91.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css" textFill="#1dee2e">
+                                                                                 <graphic>
+                                                                                    <FontAwesomeIcon iconName="REFRESH" />
+                                                                                 </graphic>
+                                                                                 <font>
+                                                                                    <Font size="22.0" />
+                                                                                 </font>
+                                                                                 <tooltip>
+                                                                                    <Tooltip text="DELETE" />
+                                                                                 </tooltip>
+                                                                                 <HBox.margin>
+                                                                                    <Insets left="20.0" />
+                                                                                 </HBox.margin>
+                                                                              </Button>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <VBox prefHeight="200.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <ImageView fitHeight="197.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true">
+                                                                           <image>
+                                                                              <Image url="@../../../images/profile.png" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                        <Button id="btnColor" mnemonicParsing="false" prefHeight="32.0" prefWidth="205.0" stylesheets="@../../../css/myStyle.css">
+                                                                           <graphic>
+                                                                              <FontAwesomeIcon fill="#fffcf9" iconName="UPLOAD" size="2em" />
+                                                                           </graphic>
+                                                                        </Button>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                   <VBox.margin>
+                                                      <Insets left="70.0" />
+                                                   </VBox.margin>
+                                                </ScrollPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxUploadResult11" alignment="CENTER" disable="true" layoutX="20.0" layoutY="20.0" prefHeight="650.0" prefWidth="1000.0">
+                     <children>
+                        <Text fill="#421b79" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Pane id="editCustomerPane" prefHeight="454.0" prefWidth="900.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="440.0" prefWidth="1000.0">
+                                 <children>
+                                    <Pane prefHeight="432.0" prefWidth="984.0">
+                                       <children>
+                                          <VBox alignment="TOP_CENTER" layoutX="425.0" layoutY="2.0" prefHeight="164.0" prefWidth="150.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../images/profile.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE  PICTURE">
+                                                   <font>
+                                                      <Font name="System Bold" size="11.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </VBox>
+                                          <HBox id="hbDetailsContainer" layoutX="94.0" layoutY="188.0" prefHeight="200.0" prefWidth="800.0" stylesheets="@../../../css/profile.css">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="410.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="ESIAMA">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="COMMUNITY NURSING">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHONE NUMBER:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="+233 54 785 2585">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMAIL:" wrappingWidth="129.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="264.0" text="NAME@ESIAMANURSING.COM">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="410.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="GHANA CARD NO:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="GHA 0000 00000 0000">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="POSITION:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="TUTOR">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="MY_NAME_!@">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD:" wrappingWidth="163.13671875">
+                                                               <font>
+                                                                  <Font name="System Bold" size="18.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Label alignment="BOTTOM_LEFT" prefHeight="27.0" prefWidth="226.0" text="SPEC!@LA@!">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets top="12.0" />
+                                                         </VBox.margin>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children></Pane>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefWidth="180.0" text="UPDATE PROFILE">
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="RESET" />
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxUploadRecord1" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="1200.0" visible="false">
+                     <children>
+                        <VBox fx:id="customerManagerVBox1" prefHeight="550.0">
+                           <children>
+                              <VBox prefHeight="550.0" prefWidth="1000.0">
+                                 <children>
+                                    <VBox prefHeight="550.0" prefWidth="2000.0">
+                                       <children>
+                                          <ScrollPane prefHeight="550.0">
+                                             <content>
+                                                <TableView fx:id="customerTable1" prefHeight="5000.0">
+                                                   <columns>
+                                                      <TableColumn id="tblColumns" fx:id="tblID1" prefWidth="129.0" text="PHOTO" />
+                                                      <TableColumn id="tblColumns" fx:id="tblFirstName1" prefWidth="158.0" text="NAME" />
+                                                      <TableColumn id="tblColumns" fx:id="tblLastName12" prefWidth="158.0" text="ID" />
+                                                      <TableColumn id="tblColumns" fx:id="tblLastName11" prefWidth="158.0" text="ROLE" />
+                                                      <TableColumn id="tblColumns" fx:id="tblNationality1" prefWidth="158.0" text="PHONE NUMBER" />
+                                                      <TableColumn id="tblColumns" fx:id="tblStatus1" prefWidth="158.0" text="EMAIL" />
+                                                      <TableColumn id="tblColumns" fx:id="tblProfile21" prefWidth="158.0" text="STATUS" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                             <VBox.margin>
+                                                <Insets top="16.0" />
+                                             </VBox.margin>
+                                          </ScrollPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

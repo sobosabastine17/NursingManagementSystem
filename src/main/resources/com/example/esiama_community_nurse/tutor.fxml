@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#MouseDrag" onMousePressed="#mousePress" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esiama_community_nurse.controller">
+   <children>
+      <Pane id="sideBar" prefHeight="700.0" prefWidth="200.0" stylesheets="@../../../css/myStyle.css">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="616.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="83.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/logo.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="86.0" text="Techline Systems" textFill="#f8f6f6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label text="TUTOR" textFill="#f8f6f6">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="System Bold" size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIcon fill="#e8e5e5" iconName="SHIELD" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="100.0" startX="-100.0" stroke="#fcf7f7">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Button id="btnUpload" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" textFill="#2911c6">
+                     <graphic>
+                        <Label text="UPLOAD RESULT" textFill="#fcf7f7">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIcon fill="#f28705" iconName="UPLOAD" size="2em" />
+                           </graphic>
+                        </Label>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="btnUpload" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" textFill="#2911c6">
+                     <graphic>
+                        <Label text="CHECK RESULT" textFill="#fcf7f7">
+                           <graphic>
+                              <FontAwesomeIcon fill="#f28705" iconName="BOOK" size="2em" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button id="btnUpload" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" textFill="#2911c6">
+                     <graphic>
+                        <Label text="MY PROFILE" textFill="#fcf7f7">
+                           <graphic>
+                              <FontAwesomeIcon fill="#f28705" iconName="USER" size="2em" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblLogout" onMousePressed="#lblLogout" text="Log out" textAlignment="JUSTIFY" textFill="#fcf7f7" underline="true">
+                     <VBox.margin>
+                        <Insets top="370.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane id="boardPane" layoutX="200.0" layoutY="-2.0" prefHeight="700.0" prefWidth="1200.0" stylesheets="@../../../css/myStyle.css">
+         <children>
+            <AnchorPane prefHeight="700.0" prefWidth="1200.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="1200.0">
+                     <children>
+                        <HBox id="hBoxWelcome" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="1200.0" stylesheets="@../../../css/myStyle.css">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" ESIAMA COMMUNITY NURSING STUDENT MANAGEMENT SYSTEM ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button id="btnColor" mnemonicParsing="false" stylesheets="@../../../css/myStyle.css" text="0" textFill="#fcf9f9">
+                                 <graphic>
+                                    <FontAwesomeIcon fill="#fcf8f7" iconName="INBOX" selectionFill="#f27406" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="400.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="btnClose" fx:id="btnTutorLogout" mnemonicParsing="false" onAction="#logout" stylesheets="@../../../css/myStyle.css" text="EXIT" textFill="#fcf1f1">
+                                 <graphic>
+                                    <FontAwesomeIcon fill="#fcfbfa" iconName="POWER_OFF" selectionFill="#f27406" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxUploadRecord" prefHeight="700.0" prefWidth="1200.0" visible="false">
+                     <children>
+                        <AnchorPane id="subArchorPane" prefHeight="600.0" prefWidth="600.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                           <children>
+                              <Pane id="customerPane" fx:id="hbCenterPaneManageCustomer" layoutX="30.0" layoutY="41.0" prefHeight="547.0" prefWidth="999.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                 <children>
+                                    <VBox fx:id="customerManagerVBox" prefHeight="550.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="UPLOADED RECORD" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="System Bold" size="32.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <VBox prefHeight="550.0" prefWidth="1000.0">
+                                             <children>
+                                                <HBox prefHeight="60.0" prefWidth="1000.0">
+                                                   <children>
+                                                      <Button id="btnNavIcons" fx:id="btnPrintCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#5f0cb9" iconName="PRINT" selectionFill="#281212" size="2.5em" />
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="PRINT DATA" />
+                                                         </tooltip>
+                                                      </Button>
+                                                      <Button id="btnNavIcons" fx:id="btnUpdateCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#97cedb" iconName="EDIT" selectionFill="#281212" size="2.5em" />
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="EDIT DATA" />
+                                                         </tooltip>
+                                                      </Button>
+                                                      <Button id="btnNavIcons" fx:id="btnExpotCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#127946" iconName="FILE" selectionFill="#281212" size="2.5em" />
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="EXPORT TO EXCEL" />
+                                                         </tooltip>
+                                                      </Button>
+                                                      <Button id="btnNavIcons" fx:id="btnRefreshCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#f59003" iconName="REFRESH" size="2.5em" />
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="REFRESH" />
+                                                         </tooltip>
+                                                      </Button>
+                                                      <Button id="btnNavIcons" fx:id="btnDeleteCustomer" mnemonicParsing="false" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#e81313" iconName="CLOSE" selectionFill="#281212" size="2.5em" />
+                                                         </graphic>
+                                                         <tooltip>
+                                                            <Tooltip text="DELETE DATA" />
+                                                         </tooltip>
+                                                      </Button>
+                                                      <Button id="btnNavIcons" mnemonicParsing="false" prefHeight="36.0" prefWidth="76.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#0e07eb" iconName="SEARCH" />
+                                                         </graphic>
+                                                         <HBox.margin>
+                                                            <Insets left="50.0" />
+                                                         </HBox.margin>
+                                                      </Button>
+                                                      <TextField fx:id="txtSearch" prefHeight="38.0" prefWidth="234.0" promptText="PIN NUMBER/NAME">
+                                                         <HBox.margin>
+                                                            <Insets right="10.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <VBox id="customerCountVB" prefHeight="38.0" prefWidth="211.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <children>
+                                                            <HBox prefHeight="38.0" prefWidth="143.0">
+                                                               <children>
+                                                                  <Label prefHeight="16.0" prefWidth="134.0" text="TOTAL UPLOAD : ">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="13.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label prefHeight="16.0" prefWidth="109.0" text="0">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="38.0" prefWidth="143.0">
+                                                               <children>
+                                                                  <Label prefHeight="16.0" prefWidth="142.0" text="PASSED STUDENT : " textFill="#2ada42">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox id="customerCountVB" prefHeight="38.0" prefWidth="211.0" stylesheets="@../../../../../../../MMF/src/main/resources/com/example/mmf/myStyle.css">
+                                                         <children>
+                                                            <HBox prefHeight="38.0" prefWidth="143.0">
+                                                               <children>
+                                                                  <Label prefHeight="16.0" prefWidth="142.0" text="TOTAL STUDENT:" textFill="#fcea24">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="38.0" prefWidth="143.0">
+                                                               <children>
+                                                                  <Label prefHeight="16.0" prefWidth="192.0" text="FAILED STUDENT : " textFill="#e42626">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label prefHeight="13.0" prefWidth="111.0" text="0">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <VBox prefHeight="550.0" prefWidth="2000.0">
+                                                   <children>
+                                                      <ScrollPane prefHeight="550.0">
+                                                         <content>
+                                                            <TableView fx:id="customerTable" prefHeight="5000.0">
+                                                               <columns>
+                                                                  <TableColumn id="tblColumns" fx:id="tblID" prefWidth="129.0" text="PIN NUMBER" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblNationality" prefWidth="158.0" text="MARK(S)" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblStatus" prefWidth="158.0" text="GRADE" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblProfile" prefWidth="158.0" text="STATUS" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblFirstName" prefWidth="158.0" text="FIRST NAME" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblLastName" prefWidth="158.0" text="SECOND NAME" />
+                                                                  <TableColumn id="tblColumns" fx:id="tblLastName1" prefWidth="158.0" text="OTHER NAME" />
+                                                               </columns>
+                                                            </TableView>
+                                                         </content>
+                                                      </ScrollPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vBoxUploadResult" prefHeight="550.0" prefWidth="1000.0">
+                     <children>
+                        <Pane fx:id="hbCenterPaneManageCustomer1" prefHeight="550.0" prefWidth="1200.0">
+                           <children>
+                              <VBox prefHeight="800.0">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="100.0">
+                                       <children>
+                                          <HBox id="addCustomerHBox" alignment="CENTER" prefHeight="150.0" prefWidth="200.0" stylesheets="@../../../css/myStyle.css">
+                                             <children>
+                                                <Text fill="#020873" strokeType="OUTSIDE" strokeWidth="0.0" text="UPLOAD RESULT" textAlignment="CENTER">
+                                                   <font>
+                                                      <Font name="System Bold" size="32.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets />
+                                                   </HBox.margin>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefHeight="35.0" prefWidth="345.0" text="Couurse Name">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <HBox prefHeight="100.0" prefWidth="1010.0">
+                                       <children>
+                                          <VBox prefHeight="407.0" prefWidth="800.0">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="800.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pin Number" wrappingWidth="126.13671875">
+                                                         <font>
+                                                            <Font size="23.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextField fx:id="txtFName" prefHeight="25.0" prefWidth="282.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="800.0">
+                                                   <children>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class Mark(s)" wrappingWidth="137.13671875">
+                                                         <font>
+                                                            <Font size="23.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextField fx:id="txtFName1" prefHeight="25.0" prefWidth="88.0" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Mark(s)" wrappingWidth="147.13671875">
+                                                         <font>
+                                                            <Font size="23.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </Text>
+                                                      <TextField fx:id="txtLName1" prefHeight="25.0" prefWidth="86.0" />
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Exams Mark(s)" wrappingWidth="147.13671875">
+                                                         <font>
+                                                            <Font size="23.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextField fx:id="txtLName11" prefHeight="25.0" prefWidth="86.0" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="30.0" prefWidth="800.0">
+                                                   <children>
+                                                      <Button id="btnRegisterCustomer" fx:id="btnRegisterCustomer" mnemonicParsing="false" prefHeight="32.0" prefWidth="168.0" stylesheets="@../../../css/myStyle.css" text="Proceed" textFill="WHITE">
+                                                         <HBox.margin>
+                                                            <Insets right="50.0" />
+                                                         </HBox.margin>
+                                                         <tooltip>
+                                                            <Tooltip text="Click To Register" />
+                                                         </tooltip>
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#f28705" iconName="CHECK" size="2em" />
+                                                         </graphic>
+                                                      </Button>
+                                                      <Button id="btnRegisterCustomer" mnemonicParsing="false" text="REFRESH" textFill="#fffdfd">
+                                                         <graphic>
+                                                            <FontAwesomeIcon fill="#f28705" iconName="REFRESH" size="2em" />
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
